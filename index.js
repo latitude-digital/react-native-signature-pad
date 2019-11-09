@@ -123,7 +123,7 @@ class SignaturePad extends Component {
   };
 
   onMessage = (event) => {
-    var base64DataUrl = JSON.parse(event.nativeEvent.data);
+    var base64DataUrl = JSON.parse(decodeURIComponent(decodeURIComponent(event.nativeEvent.data)));
     this._bridged_finishedStroke(base64DataUrl);
   };
 
