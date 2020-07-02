@@ -6,10 +6,10 @@ import React, { Component } from 'react';
 import {
   View,
   ViewPropTypes,
-  WebView,
   StyleSheet,
 } from 'react-native';
 
+import { WebView } from 'react-native-webview';
 
 import htmlContent from './injectedHtml';
 import injectedSignaturePad from './injectedJavaScript/signaturePad';
